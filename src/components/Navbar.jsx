@@ -9,15 +9,15 @@ const Navbar = () => {
   return (
     <div>
       <nav>
-        <div className="container nav_container">
+        <div className="container nav_container ">
           <Link to="/" className='logo'>
-            <img src={Logo} alt="Nav Logo" width={"100px"} />
+            <img src={Logo} alt="Nav Logo" width={'100px'} />
           </Link>
           <ul className='nav_links'>
             {
               links.map(({ name, path }, index) => (
-                <li key={index}>
-                  <NavLink to={path}>{name}</NavLink>
+                <li>
+                  <NavLink to={path} key={index} className={({isActive}) => isActive ? 'active-nav':''}>{name}</NavLink>
                 </li>
               ))
             }

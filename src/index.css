@@ -9,11 +9,45 @@
      
 }
 :root{
-    --primary-hue:210;
+    --primary-hue:280;
     --grey-hue: 240;
     --color-primary: hsl(var(--primary-hue),
-    80%,60%)
+    100%,50%);
+    --container-width-lg:80%;
+    --container-width-md:80%;
+    transition: all 500ms ease;
 }
 body{
-    background:var(--color-primary);
+    background:white;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    line-height: 1.7;
+    overflow-x: hidden;
 }
+.container{
+    width: var(--container-width-lg);
+    max-width: 1920px;
+    margin-inline: auto;
+
+}
+h1, h2, h3, h4, h5{
+    line-height: 1.2;
+    color: blue;
+} 
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h1{
+    font-size: 3rem;
+}
+a{
+    color: blue;
+}
+/* img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+} */
