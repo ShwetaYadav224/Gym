@@ -1,7 +1,7 @@
 nav{
     height: 8rem;
     width:100vw;
-    background-color:yellow;
+    background-color:#231942;
     display: grid;
     place-items: center ;
     position: fixed;
@@ -17,9 +17,9 @@ nav{
    position: relative;
 }
 .logo{
-    width: 7rem;
-
-} 
+    width: 8rem;
+    
+}
 .nav_toggle-button{
     display: none;
 }
@@ -27,27 +27,138 @@ nav{
     display: flex;
     gap: 3.5rem;  
     font-size: 1.2rem;
+    
   
 }
 .nav_links a{
     transition: 300ms;
+    color:white;
 }
 .nav_links a:hover{
-    color: rgb(0, 0, 0);
+    color: #ff6700;
 }
+
 .active-nav{
     position: relative;    
-    color: black;
 }
+.active-nav a{
+   color: #ff6700;   
+}
+
+
 .active-nav::after{
     content: '';
     display: block;
     width: 1.2rem;
     height: 1.2rem;
-    background-color: yellow;
+    background-color: #231942   ;
     position: absolute;
     transform: rotate(45deg);
     left: calc(50% - 0.6rem);
     bottom: -3.9rem; 
+    
     z-index: 1;
+}
+@media screen and (max-width: 1024px) {
+    .nav_toggle-button{
+        
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        cursor:pointer;
+        
+}
+.nav_toggle-button svg{
+    color: white;
+
+}
+.nav_links{
+    position: absolute;
+    top: 95%;
+    right: 0;
+    flex-direction: column;
+    gap:0;
+   width: 40%;
+   perspective: 400px;
+   animation: navAnimation 600ms ease forwards;
+   transform: rotateX(90deg);
+   opacity: 0;
+   transform-origin:top ;
+   perspective: 400px;
+
+}
+
+.active-nav , .active-nav::after{
+    display:none;
+}
+.nav_links li{
+    height: 3rem;
+    width: 100%;
+    box-shadow: 0rem 0.5rem 5rem grey;
+   
+ 
+}
+.nav_links li :nth-child(2) {
+animation-delay: 200ms;
+}
+.nav_links li :nth-child(3) {
+    animation-delay: 400ms;
+    }
+    .nav_links li :nth-child(4) {
+        animation-delay: 600ms;
+        }
+        .nav_links li :nth-child(5) {
+            animation-delay: 800ms;
+            }
+            .nav_links li :nth-child(6) {
+                animation-delay: 1s;
+                }
+                .nav_links li :nth-child(7) {
+                    animation-delay: 1.2s;
+                    }
+               
+                    @keyframes navAnimation{
+                        to{
+                            transform: rotate(0);
+                            opacity: 1;
+                        }
+                    }
+
+.nav_links li a{
+padding: 1rem ,5rem ,1rem ,3 rem;   
+background-color: black;
+height: 100%;   
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+font-size: 1rem;
+}
+nav{
+    height: 6rem;
+}
+.logo{
+    width: 6rem;
+    
+}
+.nav_container{
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+ }
+
+
+.nav_links a:hover{
+    color: white;
+}
+.show-menu{
+    display: flex;
+}
+.hide-menu{
+    display: none;
+}
+
 }

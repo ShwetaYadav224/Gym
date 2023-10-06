@@ -18,7 +18,7 @@
     transition: all 500ms ease;
 }
 body{
-    background:white;
+    background:#e2e2df;
     font-family: 'Montserrat', sans-serif;
     color: black;
     line-height: 1.7;
@@ -32,7 +32,7 @@ body{
 }
 h1, h2, h3, h4, h5{
     line-height: 1.2;
-    color: blue;
+    color: black;
 } 
 h1{
     font-size: 3rem;
@@ -46,8 +46,82 @@ h1{
 a{
     color: blue;
 }
-/* img{
+img{
     display: block;
     object-fit: cover;
     width: 100%;
-} */
+}
+.btn {
+    background-color: #231942;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.9rem 2rem;
+    border-radius: 1.5rem;
+    color: aliceblue;
+}
+.btn:hover{
+    background-color: black;
+    color: #e2e2df;
+}
+.btn.lg{
+    padding: 1.2rem 3rem;
+    background-color: #231942;
+    font-size: 1.1rem;
+}
+.btn.sm{
+    padding: 0.4rem 1.2rem;
+    font-size: 0.9rem;
+}
+.btn.sm:hover{
+    background-color: black;
+    color: #e2e2df;
+}
+section{
+    margin-top: 10rem;
+}
+.section_head{
+display: flex;
+align-items: center;
+gap:1rem;
+}
+.section_head span{
+    background-color: #231942;
+    color: #edb440;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    padding: 0.8rem;
+}
+
+
+
+
+.card{
+    background-color: #231942;
+    border: 2px solid transparent;
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: 0rem 3rem 0rem 3rem;
+    transition: 300ms;
+}
+.card:hover{
+    background-color: transparent;
+    border-color: #231942;
+    cursor: default;
+}
+.card span{
+    width: 3rem;
+    height: 3rem;
+    background-color: #fa7b26;
+    color: black;
+    font-size: 1.5rem;
+    display: grid;
+    place-items: center;
+    padding: 0.6rem;
+    margin-bottom: 1.5rem;
+    margin-inline: auto;
+    border-radius: 1rem;
+    transition: 300ms;
+}
+.card span:hover{
+background-color: #edb440;
+}
