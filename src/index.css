@@ -71,6 +71,8 @@ img{
 .btn.sm{
     padding: 0.4rem 1.2rem;
     font-size: 0.9rem;
+    background-color: #e2e2df;
+    color: #231942;
 }
 .btn.sm:hover{
     background-color: black;
@@ -122,6 +124,31 @@ gap:1rem;
     border-radius: 1rem;
     transition: 300ms;
 }
-.card span:hover{
+.card:hover span{
 background-color: #edb440;
 }
+.card small{
+    margin-top: 1rem;
+    display: block;
+    font-weight: 300;
+    color: #e2e2df;
+}
+.card:hover a{
+    background-color:black;
+    color: #e2e2df;
+    }
+    .card:hover small{
+        
+        color: #fa7b26;
+        font-weight: 400;
+        }
+        .card h4{
+        
+            color: white;
+            font-weight: 400;
+            }
+            .card:hover h4{
+        
+                color: black;
+                font-weight: 800;
+                }
