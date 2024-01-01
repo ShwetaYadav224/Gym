@@ -57,3 +57,67 @@ gap:6rem
 .programs-program a:hover{
     background-color: #231942;
 }
+.values_container{
+    display: grid;
+    grid-template-columns: 38% 50%;
+    gap: 12%;
+}
+.values_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.4rem 2.4rem;
+
+}
+.values_right > p{
+    margin: 1.5rem 0 5rem;
+}
+.card.Values_values {
+    padding-top: 3.5rem;
+    text-align: left;
+    position:relative
+
+}
+.card.Values_values span{
+    position: absolute;
+    top: -1.5rem;
+}
+.values_left{
+    display: flex;
+    align-items: center;
+}
+/*
+fqa
+*/
+.faqs_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 4rem;
+    gap:1.5rem 5rem;
+    align-items: flex-start;
+    
+}
+.faq{
+    background-color: #56575c;
+    padding:2rem;
+    cursor: pointer;
+    color: white;
+    border-radius: 1rem;
+    transition: 50ms;
+}
+
+.faq div{
+    display:flex;
+    justify-content: space-between;
+}
+.faq button{
+    background-color: #56575c;
+    color: aliceblue;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.faq p{
+    padding-top: 1.2rem;
+}
+.faq h3{
+    color: #ff6700;
+}

@@ -60,3 +60,61 @@ export const programs=[
         path:"/programs/114"
     },
 ]
+export const values=[
+    {
+        id:1,
+        icon:<SiOpenaigym/>,
+        title:"Value One",
+        desc:"placdchjwh uehdhwu dudehcuja jxsjci"
+    },
+    {
+        id:2,
+        icon:<SiOpenaigym/>,
+        title:"Value One",
+        desc:"placdchjwh uehdhwu dudehcuja jxsjci"
+    },
+    {
+        id:3,
+        icon:<SiOpenaigym/>,
+        title:"Value One",
+        desc:"placdchjwh uehdhwu dudehcuja jxsjci"
+    },
+    {
+        id:4,
+        icon:<SiOpenaigym/>,
+        title:"Value One",
+        desc:"placdchjwh uehdhwu dudehcuja jxsjci"
+    }
+]
+export const Fqas=[{
+    id:1,
+    question:"how arwe you?",
+    ans:"oius dshb hsjhd hdhss si"
+},
+{
+    id:2,
+    question:"how arwe you?",
+    ans:"oius dshb hsjhd hdhss si"
+},
+{
+    id:3,
+    question:"how arwe you?",
+    ans:"oius dshb hsjhd hdhss si"
+},
+{
+    id:4,
+    question:"how arwe you?",
+    ans:"oius dshb hsjhd hdhss si"
+},
+{
+    id:5,
+    question:"how arwe you?",
+    ans:"oius dshb hsjhd hdhss si"
+},
+{
+    id:6,
+    question:"how arwe you?",
+    ans:"oius dshb hsjhd hdhss si"
+}
+
+]
